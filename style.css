@@ -1,0 +1,300 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  * {
+    margin: 0%;
+  }
+  
+  h1,
+  p,
+  h2,
+  h3,
+  button,
+  input {
+    font-family: 'El Messiri', sans-serif;
+  }
+  
+  hr {
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 80%;
+    border-color: darkgray;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  body {
+    background-image: url("https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/866dcad9-fe77-46d9-9c5c-5e3b5ed2b61f_scaled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  .parent {
+    color: white;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+  .display {
+    border-radius: 10px;
+    background-color: rgba(34, 34, 34, 0.2);
+    backdrop-filter: blur(15px);
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    margin-top: 110px;
+    height: 700px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* .bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/pokemon-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+    filter: blur(2px);
+  } */
+  
+  .container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .h1-sap {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .error-info {
+    display: none;
+    text-align: center;
+    color: red;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+  /* Button / Input */
+  
+  .control-panel {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pokemon {
+    border-radius: 20px 0 0 20px;
+    height: 44px;
+    width: 200px;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
+  .search {
+    border-radius: 0 20px 20px 0;
+    height: 50px;
+    width: 100px;
+  }
+  
+  /* Poke info */
+  
+  .hidden {
+    visibility: hidden;
+  }
+  
+  .poke-name {
+    margin-top: 10px
+  }
+  
+  .poke-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Group 1 */
+  
+  .group1 {
+    text-align: center;
+    margin-top: -10;
+    flex: 30% 0 0;
+  }
+  
+  .poke-img {
+    max-width: 300px;
+    max-height: 300px;
+    height: 300px;
+  }
+  
+  /* Group 2 */
+  
+  progress {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+    /* Remove default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  progress::-webkit-progress-bar {
+    border-radius: 20px;
+    background-color: #eee;
+  }
+  
+  progress::-webkit-progress-value {
+    border-radius: 20px;
+  }
+  
+  .base-happiness::-webkit-progress-value {
+    background-color: lightgreen;
+  }
+  
+  .capture-rate::-webkit-progress-value {
+    background-color: red;
+  }
+  
+  .group2 {
+    margin-top: 50px;
+    text-align: center;
+    flex: 0 30% 0;
+  }
+  
+  .bh {
+    margin-top: 5px;
+  }
+  
+  .cr {
+    margin-top: 5px;
+  }
+  
+  /* Group 3 */
+  
+  .group3 {
+    text-align: center;
+    flex: 0 0 30%;
+  }
+  
+  .group3 h3 {
+    margin-bottom: 60px;
+  }
+  
+  .ability {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(34, 34, 34, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .ability p {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+    .display {
+      height: 1400px;
+      width: 300px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    .display {
+      padding: 20px;
+    }
+  
+    /* Control Panel */
+    .control-panel {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  
+    .pokemon,
+    .search {
+      border-radius: 30px;
+      font-size: 24px;
+      height: 50px;
+      width: 200px;
+      margin-bottom: 20px;
+    }
+  
+    /* Loading Spinner */
+    .spinner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+  
+    /* Text Elements */
+    h1,
+    h2,
+    h3,
+    p {
+      font-size: 1.5em;
+    }
+  
+    /* Progress Bars and other Data */
+    .base-happiness,
+    .capture-rate {
+      height: 20px;
+      margin-top: 20px;
+    }
+  
+    .group1,
+    .group2,
+    .group3 {
+      margin-bottom: 20px;
+    }
+  
+    /* Alternatively, if their parent is a flex container */
+    .poke-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  }

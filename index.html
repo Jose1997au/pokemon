@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+  </header>
+
+  <main class="container">
+    <!-- <div class="bg-img"></div> -->
+    <i class="fi-xnsus5-loading spinner" style="display:none;"></i>
+    <div class="display">
+
+      <!-- Control Panel -->
+
+      <h1 class="h1-sap">Search a Pokemon!</h1>
+      <h3 class="error-info">Pokemon not found!</h3>
+
+      <div class="control-panel">
+        <input class="pokemon">
+        <button class="search" onclick="on_click()">Search</button>
+      </div>
+
+      <hr>
+
+      <!-- Div where pokemon information will be displayed -->
+      <div class="parent hidden">
+        <h2 class="poke-name" id="poke-name">Pokemon Name</h2>
+        <div class="poke-info">
+
+          <!-- Group 1 -->
+          <div class="group1">
+            <h3 class="evolves-from" id="evolves-from">Evolves from: </h3>
+            <img src="" class="poke-img" id="poke-img">
+          </div>
+
+          <!-- Group 2 -->
+          <div class="group2">
+            <p>Base Happiness:</p>
+            <p id="bh" class="bh">50/100</p>
+            <progress id="base-happiness" class="base-happiness" value="50" max="100">Base Happiness</progress>
+            <p>Caputure Rate:</p>
+            <p id="cr" class="cr">35</p>
+            <progress id="capture-rate" class="capture-rate" value="35" max="200">Capture Rate</progress>
+          </div>
+
+          <!-- Group 3 -->
+          <div class="group3">
+            <h3>Abilities:</h3>
+            <div class="a-conatiner">
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <!-- Our JS -->
+  <script src="script.js"></script>
+  <!-- JQery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <!-- Friconix -->
+  <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+</body>
+
+</html>
