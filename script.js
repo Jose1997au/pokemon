@@ -134,14 +134,17 @@ const on_click = async () => {
     }
   } catch(err) {
     hide_spinner();
-    console.error(err);
+    console.log(err);
     $('.error-info').show()
   }
 }
+
 // Event listener JQery for pressing enter
 
-$(document).keydown(function(e) {
-  if (e.keycode == "enter") {
-    on_click()
+document.addEventListener('keypress', (e) => {
+  const activeElement = document.activeElement;
+  const inputBox = document.getElementById('search-field');
+  if (e.key == "Enter" && activeElement === inputBox) {
+    on_click();
   }
 });
